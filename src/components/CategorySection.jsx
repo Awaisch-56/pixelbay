@@ -7,18 +7,25 @@ import {
   Typography,
   Button,
 } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function CategorySection({ category, images }) {
+  const navigate = useNavigate();
+
   return (
     <div style={{ marginBottom: "40px" }}>
       <Typography
         variant="h5"
-        sx={{ fontWeight: "bold", mb: 3, textAlign: "center", color: "primary.main" }}
+        sx={{
+          fontWeight: "bold",
+          mb: 3,
+          textAlign: "center",
+          color: "primary.main",
+        }}
       >
         {category}
       </Typography>
 
-      {/* Grid with 4 cards per row on lg, responsive on smaller */}
       <Grid container spacing={2} justifyContent="center">
         {images.map((img, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
@@ -27,8 +34,13 @@ function CategorySection({ category, images }) {
                 borderRadius: 3,
                 boxShadow: 4,
                 transition: "0.3s",
-                "&:hover": { transform: "scale(1.05)" },
+                "&:hover": { transform: "scale(1.05)", cursor: "pointer" },
               }}
+              onClick={() =>
+                navigate(`/category/${category}/${index}`, {
+                  state: { images, selectedIndex: index },
+                })
+              }
             >
               <CardMedia
                 component="img"
@@ -44,16 +56,6 @@ function CategorySection({ category, images }) {
                 >
                   {category} Image {index + 1}
                 </Typography>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  fullWidth
-                  sx={{ textTransform: "none", borderRadius: 2 }}
-                  href={img}
-                  download
-                >
-                  Download
-                </Button>
               </CardContent>
             </Card>
           </Grid>

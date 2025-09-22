@@ -7,8 +7,10 @@ import {
   Chip,
   Stack,
   InputAdornment,
+  useMediaQuery,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import { useTheme } from "@mui/material/styles";
 
 const categories = [
   "nature",
@@ -29,6 +31,9 @@ const categories = [
 function HeroSection({ onSearch, onCategorySelect }) {
   const [searchText, setSearchText] = useState("");
 
+  const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+
   const handleSearch = () => {
     if (onSearch) {
       onSearch(searchText);
@@ -38,7 +43,7 @@ function HeroSection({ onSearch, onCategorySelect }) {
   return (
     <Box
       sx={{
-        height: "100vh",
+        height: isSmall ? "100%" : "100vh" ,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -49,6 +54,8 @@ function HeroSection({ onSearch, onCategorySelect }) {
         color: "white",
         textAlign: "center",
         px: 2,
+        py: 4,
+        backdropFilter: "brightness(0.7)",
       }}
     >
       {/* Headline */}
@@ -63,6 +70,7 @@ function HeroSection({ onSearch, onCategorySelect }) {
       <Box
         sx={{
           display: "flex",
+          flexDirection: isSmall ? "column" : "row", // stack on mobile
           gap: 1,
           width: "100%",
           maxWidth: "700px",
@@ -92,6 +100,7 @@ function HeroSection({ onSearch, onCategorySelect }) {
           sx={{
             borderRadius: "50px",
             px: 4,
+            width: isSmall ? "100%" : "auto", // full width button on small
           }}
           onClick={handleSearch}
         >
@@ -106,13 +115,15 @@ function HeroSection({ onSearch, onCategorySelect }) {
         sx={{
           flexWrap: "wrap",
           justifyContent: "center",
+          maxWidth: "800px",
+          rowGap: 1, // vertical spacing between rows
         }}
       >
         {categories.map((cat) => (
           <Chip
             key={cat}
             label={cat}
-            onClick={() => onCategorySelect(cat)}
+            // onClick={() => onCategorySelect(cat)}
             sx={{
               bgcolor: "rgba(255,255,255,0.9)",
               color: "#333",

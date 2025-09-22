@@ -7,6 +7,7 @@ import AboutSection from "./components/About";
 import Footer from "./components/footer";
 import Contact from "./components/Contact";
 import { Box } from "@mui/material";
+import CategoryDetailPage from "./components/CategoryDetailPage";
 
 function App() {
   const categories = {
@@ -26,26 +27,25 @@ function App() {
   );
 
   return (
- <Box
-      display="flex"
-      flexDirection="column"
-      minHeight="100vh"
-    >
+    <Box display="flex" flexDirection="column" minHeight="100vh">
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
 
-      {/* Main content grows to push footer down */}
-      <Box flex="1">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutSection />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Box>
+        {/* Main content grows to push footer down */}
+        <Box flex="1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutSection />} />
+            <Route path="/contact" element={<Contact />} />
 
-      {/* Footer always at bottom */}
-      <Footer />
-    </BrowserRouter>
+            {/* ✅ Add Category Detail Page Route */}
+            <Route path="/category/:category/:id" element={<CategoryDetailPage />} />
+          </Routes>
+        </Box>
+
+        {/* Footer always at bottom */}
+        <Footer />
+      </BrowserRouter>
     </Box>
   );
 }

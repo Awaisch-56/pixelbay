@@ -14,16 +14,19 @@ function Footer() {
       }}
     >
       <Typography variant="body1" sx={{ mb: 1 }}>
-        © {new Date().getFullYear()} PNG Gallery. All rights reserved.
+        © {new Date().getFullYear()} PixelBay. All rights reserved.
       </Typography>
       <Box sx={{ display: "flex", justifyContent: "center", gap: 3 }}>
+        <Link href="/" underline="hover" color="inherit">
+          Home
+        </Link>
         <Link href="/about" underline="hover" color="inherit">
           About
         </Link>
         <Link href="/contact" underline="hover" color="inherit">
           Contact
         </Link>
-        <Link href="/privacy" underline="hover" color="inherit">
+        <Link href="/" underline="hover" color="inherit">
           Privacy Policy
         </Link>
       </Box>

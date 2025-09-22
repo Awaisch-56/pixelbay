@@ -24,10 +24,17 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
 
-    // You can later connect API or Email service here
-    alert("Message Sent! ✅");
+    const phoneNumber = "+923087590031";
+
+    const text = `New Message from PixelBay:
+Name: ${formData.name}%0A
+Email: ${formData.email}%0A
+Message: ${formData.message}`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${text}`;
+    window.open(url, "_blank");
+
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -94,7 +101,7 @@ function Contact() {
               textTransform: "none",
             }}
           >
-            Send Message
+            Send via WhatsApp
           </Button>
         </Box>
       </Paper>
