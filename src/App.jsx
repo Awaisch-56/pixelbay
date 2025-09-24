@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import CategorySection from "./components/CategorySection";
@@ -10,18 +10,16 @@ import { Box } from "@mui/material";
 import CategoryDetailPage from "./components/CategoryDetailPage";
 
 function App() {
-  const categories = {
-    Nature_Images: ["/pic.jpeg", "/pic2.jpg", "/pic.jpeg", "/pic2.jpg"],
-  };
+  const [selectedCategory, setSelectedCategory] = useState("GamingWallpaper");
 
   // ✅ Home Page Component
   const HomePage = () => (
     <>
-      <HeroSection />
+      <HeroSection onCategorySelect={setSelectedCategory} />
       <div style={{ marginTop: "2rem" }}>
-        {Object.entries(categories).map(([name, images]) => (
-          <CategorySection key={name} category={name} images={images} />
-        ))}
+        {selectedCategory && (
+          <CategorySection category={selectedCategory} />
+        )}
       </div>
     </>
   );
@@ -31,19 +29,15 @@ function App() {
       <BrowserRouter>
         <Navbar />
 
-        {/* Main content grows to push footer down */}
         <Box flex="1">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutSection />} />
             <Route path="/contact" element={<Contact />} />
-
-            {/* ✅ Add Category Detail Page Route */}
             <Route path="/category/:category/:id" element={<CategoryDetailPage />} />
           </Routes>
         </Box>
 
-        {/* Footer always at bottom */}
         <Footer />
       </BrowserRouter>
     </Box>

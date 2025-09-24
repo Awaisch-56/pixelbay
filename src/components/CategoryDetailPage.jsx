@@ -11,10 +11,11 @@ import {
 } from "@mui/material";
 
 function CategoryDetailPage() {
-  const { id, category } = useParams(); // ✅ get both category & id
+  const { id, category } = useParams(); 
   const location = useLocation();
   const navigate = useNavigate();
 
+  // ✅ Images now contain { src, name }
   const { images } = location.state || { images: [] };
 
   const currentIndex = parseInt(id);
@@ -34,19 +35,19 @@ function CategoryDetailPage() {
       >
         <CardMedia
           component="img"
-          image={mainImage}
-          alt={`Image-${id}`}
+          image={mainImage?.src}
+          alt={mainImage?.name}
           sx={{ objectFit: "contain", maxHeight: 400 }}
         />
         <Box sx={{ p: 2, textAlign: "center" }}>
           <Typography variant="h6" sx={{ mb: 2, fontWeight: "bold" }}>
-            Detailed View - Image {currentIndex + 1}
+            {mainImage?.name || `Image ${currentIndex + 1}`}
           </Typography>
           <Button
             variant="contained"
             color="primary"
             sx={{ textTransform: "none", borderRadius: 2 }}
-            href={mainImage}
+            href={mainImage?.src}
             download
           >
             Download Image
@@ -68,6 +69,7 @@ function CategoryDetailPage() {
             <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
               <Card
                 sx={{
+                  width: 280,
                   borderRadius: 2,
                   boxShadow: 2,
                   "&:hover": { transform: "scale(1.05)", cursor: "pointer" },
@@ -75,15 +77,15 @@ function CategoryDetailPage() {
                 onClick={() =>
                   navigate(`/category/${category}/${index}`, {
                     state: { images },
-                    replace: true, 
+                    replace: true,
                   })
                 }
               >
                 <CardMedia
                   component="img"
                   height="140"
-                  image={img}
-                  alt={`related-${index}`}
+                  image={img.src}
+                  alt={img.name}
                   sx={{ objectFit: "contain" }}
                 />
                 <CardContent>
@@ -91,7 +93,7 @@ function CategoryDetailPage() {
                     variant="body2"
                     sx={{ textAlign: "center", fontWeight: 500 }}
                   >
-                    Image {index + 1}
+                    {img.name}
                   </Typography>
                 </CardContent>
               </Card>
