@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Box,
   Typography,
@@ -12,42 +12,17 @@ import {
 import SearchIcon from "@mui/icons-material/Search";
 import { useTheme } from "@mui/material/styles";
 
-const categories = [
-  "GamingWallpaper",
-  "Characters",
-  "Textures",
-  "Icons",
-  "PNG",
-];
+const categories = ["GamingWallpaper", "Characters", "Textures", "Icons", "PNG"];
 
 function HeroSection({ onSearch, onCategorySelect }) {
   const [searchText, setSearchText] = useState("");
-  const [filteredCategories, setFilteredCategories] = useState(categories);
 
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
 
-  // Common filter function
-  const filterCategories = (keyword) => {
-    if (!keyword.trim()) {
-      setFilteredCategories(categories);
-    } else {
-      const filtered = categories.filter((cat) =>
-        cat.toLowerCase().includes(keyword.toLowerCase())
-      );
-      setFilteredCategories(filtered);
-    }
-    if (onSearch) onSearch(keyword); // send back to parent if needed
-  };
-
-  // Auto-filter on typing
-  useEffect(() => {
-    filterCategories(searchText);
-  }, [searchText]);
-
-  // Manual search (button or Enter key)
+  // ✅ Trigger parent search
   const handleSearch = () => {
-    filterCategories(searchText);
+    if (onSearch) onSearch(searchText);
   };
 
   return (
@@ -68,7 +43,6 @@ function HeroSection({ onSearch, onCategorySelect }) {
         backdropFilter: "brightness(0.7)",
       }}
     >
-      {/* Headline */}
       <Typography variant="h3" fontWeight="bold" gutterBottom>
         Stunning PNG Images & Free Downloads
       </Typography>
@@ -88,14 +62,14 @@ function HeroSection({ onSearch, onCategorySelect }) {
           variant="outlined"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && handleSearch()} // still works on Enter
+         onKeyDown={(e) => e.key === "Enter" && handleSearch()} 
           sx={{
             bgcolor: "white",
             borderRadius: "50px",
             width: "100%",
             "& .MuiOutlinedInput-root": {
               borderRadius: "50px",
-              pr: isSmall ? "90px" : "160px", // space for button
+              pr: isSmall ? "90px" : "160px",
             },
           }}
           InputProps={{
@@ -107,7 +81,6 @@ function HeroSection({ onSearch, onCategorySelect }) {
           }}
         />
 
-        {/* Absolute button inside */}
         <Button
           variant="contained"
           onClick={handleSearch}
@@ -130,38 +103,33 @@ function HeroSection({ onSearch, onCategorySelect }) {
       {/* Category chips */}
       <Stack
         direction="row"
-        spacing={1} 
+        spacing={1}
         sx={{
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
           maxWidth: "600px",
           mt: 4,
-          rowGap: 2, 
+          rowGap: 2,
         }}
       >
-        {filteredCategories.length > 0 ? (
-          filteredCategories.map((cat) => (
-            <Chip
-              key={cat}
-              label={cat}
-              onClick={() => onCategorySelect && onCategorySelect(cat)}
-              sx={{
-                bgcolor: "rgba(255,255,255,0.9)",
-                color: "#333",
-                fontWeight: 500,
-                cursor: "pointer",
-                "&:hover": {
-                  bgcolor: "#eee",
-                },
-              }}
-            />
-          ))
-        ) : (
-          <Typography color="white">No results found</Typography>
-        )}
+        {categories.map((cat) => (
+          <Chip
+            key={cat}
+            label={cat}
+            onClick={() => onCategorySelect && onCategorySelect(cat)}
+            sx={{
+              bgcolor: "rgba(255,255,255,0.9)",
+              color: "#333",
+              fontWeight: 500,
+              cursor: "pointer",
+              "&:hover": {
+                bgcolor: "#eee",
+              },
+            }}
+          />
+        ))}
       </Stack>
-
     </Box>
   );
 }
