@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 
 function CategoryDetailPage() {
-  const { id, category } = useParams(); 
+  const { id, category } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -74,12 +74,13 @@ function CategoryDetailPage() {
                   boxShadow: 2,
                   "&:hover": { transform: "scale(1.05)", cursor: "pointer" },
                 }}
-                onClick={() =>
+                onClick={() => {
                   navigate(`/category/${category}/${index}`, {
                     state: { images },
                     replace: true,
-                  })
-                }
+                  });
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
               >
                 <CardMedia
                   component="img"

@@ -11,8 +11,15 @@ import { useNavigate } from "react-router-dom";
 
 import summer from "../assets/Gaming Wllpaper/aesthetic-summer-holidays.jpg";
 import animeCar from "../assets/Gaming Wllpaper/anime-car-city.jpg";
-import cartoon from "../assets/Gaming Wllpaper/cartoon-tropical-island-landscape (1).jpg";
+import cartoon from "../assets/Gaming Wllpaper/cartoon-tropical-island-landscape.jpg";
+import cartoon1 from "../assets/Gaming Wllpaper/cartoon-tropical-island-landscape (1).jpg";
+import cartoon2 from "../assets/Gaming Wllpaper/cartoon-tropical-island-landscape (2).jpg";
+import cartoon3 from "../assets/Gaming Wllpaper/cartoon-tropical-island-landscape (3).jpg";
 import blackState from "../assets/Gaming Wllpaper/black-state-content-02-1920x1080.jpg";
+import citydark from "../assets/Gaming Wllpaper/city dark evening wallper.png";
+import gtagaming from "../assets/Gaming Wllpaper/gta city wallpaper.png";
+import gangstercitywar from "../assets/Gaming Wllpaper/gangster city car wallaer.png";
+
 
 import bodyman from "../assets/Charactors/body man charactor.png";
 import boysgirls from "../assets/Charactors/boy and girl style charctor.png";
@@ -45,9 +52,16 @@ function CategorySection({ category }) {
       { src: animeCar, name: "Anime Car City" },
       { src: cartoon, name: "Cartoon Island" },
       { src: blackState, name: "Black State" },
+      { src: cartoon1, name: "Cartoon Island 1" },
+      { src: cartoon2, name: "Cartoon Island 2" },
+      { src: cartoon3, name: "Cartoon Island 3" },
+      { src: citydark, name: "City Dark Evening" },
+      { src: gtagaming, name: "GTA City" },
+      { src: gangstercitywar, name: "Gangster City War" },
+
     ],
     Characters: [
-      { src: bodyman,  name: "Boy Man" },
+      { src: bodyman, name: "Boy Man" },
       { src: boysgirls, name: "Boys & Girls" },
       { src: gangsterman, name: "Gangster Man" },
       { src: mafiagang, name: "Mafia Gang" },
@@ -100,11 +114,12 @@ function CategorySection({ category }) {
                 transition: "0.3s",
                 "&:hover": { transform: "scale(1.05)", cursor: "pointer" },
               }}
-              onClick={() =>
+              onClick={() => {
                 navigate(`/category/${category}/${index}`, {
                   state: { images, selectedIndex: index },
-                })
-              }
+                });
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               <CardMedia
                 component="img"
@@ -125,7 +140,7 @@ function CategorySection({ category }) {
           </Grid>
         ))}
       </Grid>
-    </div>
+    </div >
   );
 }
 
