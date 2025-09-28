@@ -3,19 +3,19 @@ import { Box, Typography, Button } from "@mui/material";
 import { useParams, useNavigate } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Html } from "@react-three/drei";
-import { useFBX } from "../hook/UseFbxLoader";
+import { useGLTF } from "@react-three/drei";
 import DownloadIcon from "@mui/icons-material/Download";
 
 const modelsData = {
-  tozzo98: {
-    fbxPath: "/models/source/Tozzo98.fbx",
-    zipPath: "/models/tozzo-98-low-poly-model.zip",
-    name: "Tozzo 98",
+  hondacivic: {
+    gltfPath: "/models/GLTF/2023 Honda Civic Type R.gltf",
+    zipPath: "/models/zipFile/2023 Honda Civic Type R.zip",
+    name: "2023 Honda Civic",
   },
-  carx: {
-    fbxPath: "/models/source/Tozzo98.fbx",
-    zipPath: "/models/carx-model.zip",
-    name: "Car X",
+  civichatchback: {
+    gltfPath: "/models/GLTF/Honda Civic Hatchback.gltf",
+    zipPath: "/models/zipFile/Honda Civic Hatchback.zip",
+    name: "Honda Civic Hatchback",
   },
   // add more models here
 };
@@ -28,9 +28,9 @@ function Loader() {
   );
 }
 
-function ModelViewer({ fbxPath }) {
-  const fbx = useFBX(fbxPath);
-  return <primitive object={fbx} scale={1} />;
+function ModelViewer({ gltfPath }) {
+  const { scene } = useGLTF(gltfPath);
+  return <primitive object={scene} scale={1} />;
 }
 
 function ModelDetail() {
@@ -59,8 +59,8 @@ function ModelDetail() {
         backgroundColor: "#fff",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center", // center horizontally
-        textAlign: "center", // center text inside children
+        alignItems: "center",
+        textAlign: "center",
       }}
     >
       <Typography variant="h3" sx={{ fontWeight: "bold", mb: 4 }}>
@@ -69,10 +69,7 @@ function ModelDetail() {
 
       <Box
         sx={{
-          width: {
-            xs: "100%",   // 100% width on extra-small (mobile) screens
-            md: "70%",    // 70% width on medium and up screens
-          },
+          width: { xs: "100%", md: "70%" },
           maxWidth: 800,
           height: 500,
           border: "3px dotted #888",
@@ -93,7 +90,7 @@ function ModelDetail() {
           <directionalLight position={[10, 10, 10]} />
           <OrbitControls enableZoom />
           <Suspense fallback={<Loader />}>
-            <ModelViewer fbxPath={model.fbxPath} />
+            <ModelViewer gltfPath={model.gltfPath} />
           </Suspense>
         </Canvas>
       </Box>
@@ -110,5 +107,12 @@ function ModelDetail() {
     </Box>
   );
 }
+
+// ✅ Preload models for performance
+Object.values(modelsData).forEach((model) => {
+  if (model.gltfPath) {
+    useGLTF.preload(model.gltfPath);
+  }
+});
 
 export default ModelDetail;

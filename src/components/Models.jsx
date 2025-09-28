@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 
 const models = [
   {
-    id: "tozzo98",
-    name: "Tozzo 98",
-    image: "/pic2.jpg",
+    id: "hondacivic",
+    name: "2023 Honda Civic",
+    image: "/models/coverImages/HondaCivic.jpeg",
   },
   {
-    id: "carx",
-    name: "Car X",
-    image: "/pic.jpeg",
+    id: "civichatchback",
+    name: "Honda Civic Hatchback",
+    image: "/models/coverImages/HondaCivicHatchback.jpeg",
   },
 ];
 
@@ -20,8 +20,8 @@ function ModelList() {
 
   return (
     <Box sx={{ p: 4 }}>
-      <Typography variant="h3" sx={{ mb: 4, fontWeight: "bold", textAlign: "center" }}>
-        3D Game Models Gallery
+      <Typography variant="h3" sx={{ mb: 4, fontWeight: "bold", textAlign: "center", textDecoration: "underline" }}>
+        3D Game Models
       </Typography>
 
       {/* Center the grid container */}

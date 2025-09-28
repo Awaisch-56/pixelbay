@@ -61,10 +61,44 @@ import moderngirlgangster from "./assets/Charactors/modren gangster girl.png";
 import mancharcter from "./assets/Charactors/man charactor.png";
 import girlwithgun from "./assets/Charactors/girl with gun.png";
 
-import architecture from "./assets/Texture/architecture-ground-texture-floor-wall-pavement.jpg";
-import blueandwhite from "./assets/Texture/Blue & white stripe patterned deanim texture.png";
-import brick from "./assets/Texture/Brick Pavement 4 demo.jpg";
-import brickwall from "./assets/Texture/brick wall texture.jpg";
+import architecture from "./assets/Texture/architectural architecture art backdrop background.jpg";
+import blueandwhite from "./assets/Texture/windows blue abstract building architecture facade.jpg";
+import brick from "./assets/Texture/brick wall window architecture texture.jpg";
+import brickwall from "./assets/Texture/brick wall with coarse surface.jpg";
+import abstractaged from "./assets/Texture/abstract aged architecture backdrop background.jpg";
+import abstractarchitecture from "./assets/Texture/abstract architecture structure texture floor old.jpg";
+import abstractwhite from "./assets/Texture/abstract white texture floor wall asphalt.jpg";
+import architecturebench from "./assets/Texture/architecture bench texture window building wall.jpg";
+import architectureglass from "./assets/Texture/architecture glass concrete symmetry windows modern architecture.jpg";
+import architecturehousecityurban from "./assets/Texture/architecture house window building city urban.jpg";
+import architecturehouseurbanwall from "./assets/Texture/architecture house window building urban wall.jpg";
+import architecturehousewindowhomewall from "./assets/Texture/architecture house window home-wall porch.jpg";
+import architecturehousewindownnumber from "./assets/Texture/architecture house window number view building.jpg";
+import architecturewindowurbanwallcolor from "./assets/Texture/architecture house window urban wall color.jpg";
+import architecturestreethouse from "./assets/Texture/architecture street house texture window town.jpg";
+import architecturestreethousewindowtown from "./assets/Texture/architecture wood-street house window town.jpg";
+import architecturestreetvintageretro from "./assets/Texture/architecture street vintage retro house texture.jpg";
+import architecturestructurehousetexture from "./assets/Texture/architecture structure house texture floor building.jpg";
+import architecturestructurehousewindow from "./assets/Texture/architecture structure house window building old.jpg";
+import architecturestructurefloorbuilding from "./assets/Texture/architecture structure texture floor building wall.jpg";
+import architecturestructureflooroldhome from "./assets/Texture/architecture structure texture floor old home.jpg";
+import architecturestructurewindowbuilding from "./assets/Texture/architecture structure window building skyscraper wall.jpg";
+import architecturestructurewoodbench from "./assets/Texture/architecture structure wood bench house window.jpg";
+import architecturestructurewoodhouse from "./assets/Texture/architecture structure wood house window building.jpg";
+import architecturestructurewoodhousebuilding from "./assets/Texture/architecture structure wood house window building.jpg";
+import architecturestructurewoodwhite from "./assets/Texture/architecture structure wood white street.jpg";
+import architecturestructurewoodwhitevintage from "./assets/Texture/architecture structure wood white vintage antique.jpg";
+import architecturetexturewindowglassbuilding from "./assets/Texture/architecture texture window glass building home.jpg";
+import architecturewhitehousetexture from "./assets/Texture/architecture white house texture building city.jpg";
+import architecturewindowbuilding from "./assets/Texture/architecture window building wall.jpg";
+import architecturewoodhousefloor from "./assets/Texture/architecture wood house floor texture.jpg";
+import architecturewoodhousetexture from "./assets/Texture/architecture wood house texture floor building.jpg";
+import architecturewoodfloorwindow from "./assets/Texture/architecture wood floor window building wall.jpg";
+import architecturewoodhousefloor1 from "./assets/Texture/architecture wood house floor texture.jpg";
+import architecturewoodhousetexture1 from "./assets/Texture/architecture wood house window roof building.jpg";
+import architecturewoodhousetexturewindowbuilding from "./assets/Texture/architecture wood house texture window building.jpg";
+import architecturewoodhousewindowbuildinghome from "./assets/Texture/architecture wood house window building home.jpg";
+
 
 import stars from "./assets/ICONS/3-stars.png";
 import Camera from "./assets/ICONS/360-camera.png";
@@ -213,6 +247,39 @@ const allCategories = {
     { src: blueandwhite, name: "Blue & White Stripe" },
     { src: brick, name: "Brick Pavement" },
     { src: brickwall, name: "Brick Wall" },
+    { src: abstractaged, name: "Abstract Aged" },
+    { src: abstractarchitecture, name: "Abstract Architecture" },
+    { src: abstractwhite, name: "Abstract White" },
+    { src: architecturebench, name: "Architecture Bench" },
+    { src: architectureglass, name: "Architecture Glass" },
+    { src: architecturehousecityurban, name: "Architecture House City Urban" },
+    { src: architecturehouseurbanwall, name: "Architecture House Urban Wall" },
+    { src: architecturehousewindowhomewall, name: "Architecture House Window Home Wall" },
+    { src: architecturehousewindownnumber, name: "Architecture House Window Number" },
+    { src: architecturewindowurbanwallcolor, name: "Architecture Window Urban Wall Color" },
+    { src: architecturestreethouse, name: "Architecture Street House" },
+    { src: architecturestreethousewindowtown, name: "Architecture Street House Window Town" },
+    { src: architecturestreetvintageretro, name: "Architecture Street Vintage Retro" },
+    { src: architecturestructurehousetexture, name: "Architecture Structure House Texture" },
+    { src: architecturestructurehousewindow, name: "Architecture Structure House Window" },
+    { src: architecturestructurefloorbuilding, name: "Architecture Structure Floor Building" },
+    { src: architecturestructureflooroldhome, name: "Architecture Structure Floor Old Home" },
+    { src: architecturestructurewindowbuilding, name: "Architecture Structure Window Building" },
+    { src: architecturestructurewoodbench, name: "Architecture Structure Wood Bench" },
+    { src: architecturestructurewoodhouse, name: "Architecture Structure Wood House" },
+    { src: architecturestructurewoodhousebuilding, name: "Architecture Structure Wood House Building" },
+    { src: architecturestructurewoodwhite, name: "Architecture Structure Wood White" },
+    { src: architecturestructurewoodwhitevintage, name: "Architecture Structure Wood White Vintage" },
+    { src: architecturetexturewindowglassbuilding, name: "Architecture Texture Window Glass Building" },
+    { src: architecturewhitehousetexture, name: "Architecture White House Texture" },
+    { src: architecturewindowbuilding, name: "Architecture Window Building" },
+    { src: architecturewoodhousefloor, name: "Architecture Wood House Floor" },
+    { src: architecturewoodhousetexture, name: "Architecture Wood House Texture" },
+    { src: architecturewoodfloorwindow, name: "Architecture Wood Floor Window" },
+    { src: architecturewoodhousefloor1, name: "Architecture Wood House Floor" },
+    { src: architecturewoodhousetexture1, name: "Architecture Wood House Texture" },
+    { src: architecturewoodhousetexturewindowbuilding, name: "Architecture Wood House Texture Window Building" },
+    { src: architecturewoodhousewindowbuildinghome, name: "Architecture Wood House Window Building Home" },
   ],
   Icons: [
     { src: stars, name: "3 Stars" },
@@ -365,7 +432,7 @@ function App() {
             <Route path="/model/:modelId" element={<ModelDetail />} />
             <Route path="/about" element={<AboutSection />} />
             <Route path="/contact" element={<Contact />} />
-            
+
             <Route
               path="/category/:category/:id"
               element={<CategoryDetailPage />}
