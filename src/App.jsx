@@ -8,6 +8,8 @@ import Footer from "./components/footer";
 import Contact from "./components/Contact";
 import { Box } from "@mui/material";
 import CategoryDetailPage from "./components/CategoryDetailPage";
+import ModelList from "./components/Models";
+import ModelDetail from "./components/ModelDetail";
 
 // ✅ All images database
 import summer from "./assets/Gaming Wllpaper/aesthetic-summer-holidays.jpg";
@@ -359,8 +361,11 @@ function App() {
         <Box flex="1">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/models" element={<ModelList />} />
+            <Route path="/model/:modelId" element={<ModelDetail />} />
             <Route path="/about" element={<AboutSection />} />
             <Route path="/contact" element={<Contact />} />
+            
             <Route
               path="/category/:category/:id"
               element={<CategoryDetailPage />}

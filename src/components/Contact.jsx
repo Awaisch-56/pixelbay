@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   TextField,
@@ -7,6 +7,8 @@ import {
   Box,
   Paper,
 } from "@mui/material";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -15,6 +17,16 @@ function Contact() {
     message: "",
   });
 
+  // Load email from localStorage
+  useEffect(() => {
+    const storedEmail = localStorage.getItem("userEmail");
+    if (storedEmail) {
+      setFormData((prev) => ({ ...prev, email: storedEmail }));
+    }
+    // scroll to top when page loads
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -22,11 +34,28 @@ function Contact() {
     });
   };
 
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const phoneNumber = "+923087590031";
+    if (!formData.name.trim()) {
+      toast.error("Name is required");
+      return;
+    }
+    if (!formData.email.trim() || !validateEmail(formData.email)) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
+    if (!formData.message.trim()) {
+      toast.error("Message cannot be empty");
+      return;
+    }
 
+    const phoneNumber = "+923087590031";
     const text = `New Message from PixelBay:
 Name: ${formData.name}%0A
 Email: ${formData.email}%0A
@@ -35,6 +64,9 @@ Message: ${formData.message}`;
     const url = `https://wa.me/${phoneNumber}?text=${text}`;
     window.open(url, "_blank");
 
+    toast.success("Message sent successfully!");
+
+    // Reset form
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -101,10 +133,19 @@ Message: ${formData.message}`;
               textTransform: "none",
             }}
           >
-            Send via WhatsApp
+            Send
           </Button>
         </Box>
       </Paper>
+
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+      />
     </Container>
   );
 }

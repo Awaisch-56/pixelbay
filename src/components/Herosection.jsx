@@ -11,12 +11,13 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { useTheme } from "@mui/material/styles";
+import { useNavigate } from "react-router-dom";
 
 const categories = ["GamingWallpaper", "Characters", "Textures", "Icons", "PNG"];
 
 function HeroSection({ onSearch, onCategorySelect }) {
   const [searchText, setSearchText] = useState("");
-
+  const navigate = useNavigate();
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -62,7 +63,7 @@ function HeroSection({ onSearch, onCategorySelect }) {
           variant="outlined"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
-         onKeyDown={(e) => e.key === "Enter" && handleSearch()} 
+          onKeyDown={(e) => e.key === "Enter" && handleSearch()}
           sx={{
             bgcolor: "white",
             borderRadius: "50px",
@@ -130,6 +131,25 @@ function HeroSection({ onSearch, onCategorySelect }) {
           />
         ))}
       </Stack>
+      <Button sx={{
+        width: "130px",
+        borderRadius: "50px",
+        bgcolor: "rgba(255,255,255,0.9)",
+        color: "#333",
+        fontWeight: 500,
+        fontSize: "16px",
+        height: "40px",
+        alignItem: "center",
+        cursor: "pointer",
+        marginTop: "20px",
+        textTransform: "none",
+
+        "&:hover": {
+          bgcolor: "rgba(255,255,255,0.9)",
+        },
+      }}
+        onClick={() => navigate("/models")}
+      >3D Models</Button>
     </Box>
   );
 }
