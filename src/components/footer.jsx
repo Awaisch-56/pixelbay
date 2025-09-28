@@ -38,7 +38,7 @@ function Footer() {
       <Box
         component="footer"
         sx={{
-          background: "linear-gradient(90deg, #1e3c72, #2a5298)",
+          background: "#032358ff",
           color: "white",
           py: 4,
           px: { xs: 2, md: 6 },
