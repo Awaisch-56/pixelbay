@@ -98,6 +98,34 @@ import architecturewoodhousefloor1 from "./assets/Texture/architecture wood hous
 import architecturewoodhousetexture1 from "./assets/Texture/architecture wood house window roof building.jpg";
 import architecturewoodhousetexturewindowbuilding from "./assets/Texture/architecture wood house texture window building.jpg";
 import architecturewoodhousewindowbuildinghome from "./assets/Texture/architecture wood house window building home.jpg";
+import structurehousetexturefloorwallstone from "./assets/Texture/structure house texture floor wall stone.jpg";
+import structureroadfloorbuildinghomewall from "./assets/Texture/structure road floor building home wall.jpg";
+import structureroadgroundtexturefloorcobblestone from "./assets/Texture/structure road ground texture floor cobblestone.jpg";
+import structureroadgroundtexturefloor from "./assets/Texture/structure road ground texture floor.jpg";
+import structureroadgroundtexturesidewalkfloor from "./assets/Texture/structure road ground texture sidewalk floor.jpg";
+import structuretexturefloorbuildingwallpattern from "./assets/Texture/structure texture floor building wall pattern.jpg";
+import structuretexturefloorcobblestonewall from "./assets/Texture/structure texture floor cobblestone wall.jpg";
+import structuretextureoldwallred from "./assets/Texture/structure texture old wall red.jpg";
+import structuretexturepatternlinemetalbrick from "./assets/Texture/structure texture pattern line metal brick.jpg";
+import structurewhitegraintexturebuilding from "./assets/Texture/structure white grain texture building.jpg";
+import structuretexturefloorbuildingwallconstruction from "./assets/Texture/texture building wall shadow contrast surface.jpg";
+import texturebuildingwallshadowcontrastsurface from "./assets/Texture/texture building wall shadow contrast surface.jpg";
+import texturefloorbuildingoldwallconstruction from "./assets/Texture/texture floor urban wall construction pattern.jpg";
+import texturefloorbuildingwallconstruction from "./assets/Texture/texture floor building wall construction.jpg";
+import texturefloorbuildingwallpatternline from "./assets/Texture/texture floor urban wall construction pattern.jpg";
+import texturefloorbuildingwallredstonewall from "./assets/Texture/texture-floor-building-wall-red-stone-wall-1258605-pxhere.com.jpg";
+import texturefloorurbanwallconstructionpattern from "./assets/Texture/texture floor urban wall construction pattern.jpg";
+import texturefloorurbanwallgreen from "./assets/Texture/white texture floor old city urban.jpg";
+import texturefloorwallasphaltunderground from "./assets/Texture/texture floor wall asphalt underground.jpg";
+import texturefloorwallpatternlinetile from "./assets/Texture/texture floor wall pattern line tile.jpg";
+import texturesidewalkfloorwallasphaltpattern from "./assets/Texture/texture sidewalk floor wall asphalt pattern.jpg";
+import texturewallgrungebluestonewallcolorful from "./assets/Texture/texture wall grunge blue stone wall colorful.jpg";
+import tiledstonefacadetexture from "./assets/Texture/tiled stone facade texture.jpg";
+import trackroadtexturfloorwallasphalt from "./assets/Texture/track road texture floor wall asphalt.jpg";
+import treeforestarchitecturestructuretextureleaf from "./assets/Texture/tree forest architecture structure texture leaf.jpg";
+import treerockwoodtextureleaftrunk from "./assets/Texture/tree rock wood texture leaf trunk.jpg";
+import treewoodstreethousetexturewindow from "./assets/Texture/tree wood street house texture window.jpg";
+
 
 
 import stars from "./assets/ICONS/3-stars.png";
@@ -280,6 +308,29 @@ const allCategories = {
     { src: architecturewoodhousetexture1, name: "Architecture Wood House Texture" },
     { src: architecturewoodhousetexturewindowbuilding, name: "Architecture Wood House Texture Window Building" },
     { src: architecturewoodhousewindowbuildinghome, name: "Architecture Wood House Window Building Home" },
+    { src: structurehousetexturefloorwallstone, name: "structure house texture floor wall stone" },
+    { src: structureroadfloorbuildinghomewall, name: "structure road floor building home wall" },
+    { src: structureroadgroundtexturefloor, name: "structure road ground texture floor" },
+    { src: structureroadgroundtexturesidewalkfloor, name: "structure road ground texture sidewalk floor" },
+    { src: structuretexturefloorbuildingwallpattern, name: "structure texture floor building wall pattern" },
+    { src: structuretexturefloorcobblestonewall, name: "structure texture floor cobblestone wall" },
+    { src: structuretextureoldwallred, name: "structure texture old wall red" },
+    { src: structuretexturepatternlinemetalbrick, name: "structure texture pattern line metal brick" },
+    { src: structurewhitegraintexturebuilding, name: "structure white grain texture building" },
+    { src: texturebuildingwallshadowcontrastsurface, name: "texture building wall shadow contrast surface" },
+    { src: texturefloorbuildingwallconstruction, name: "texture floor building wall construction" },
+    { src: texturefloorbuildingwallpatternline, name: "texture floor building wall pattern line" },
+    { src: texturefloorbuildingwallredstonewall, name: "texture floor building wall red stone wall" },
+    { src: texturefloorurbanwallgreen, name: "texture floor urban wall green" },
+    { src: texturefloorwallasphaltunderground, name: "texture floor wall asphalt underground" },
+    { src: texturefloorwallpatternlinetile, name: "texture floor wall pattern line tile" },
+    { src: texturesidewalkfloorwallasphaltpattern, name: "texture sidewalk floor wall asphalt pattern" },
+    { src: texturewallgrungebluestonewallcolorful, name: "texture wall grunge blue stone wall colorful" },
+    { src: tiledstonefacadetexture, name: "tiled stone facade texture" },
+    { src: trackroadtexturfloorwallasphalt, name: "track road texture floor wall asphalt" },
+    { src: treeforestarchitecturestructuretextureleaf, name: "tree forest architecture structure texture leaf" },
+    { src: treerockwoodtextureleaftrunk, name: "tree rock wood texture leaf trunk" },
+    { src: treewoodstreethousetexturewindow, name: "tree wood street house texture window" },
   ],
   Icons: [
     { src: stars, name: "3 Stars" },
