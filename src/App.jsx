@@ -126,6 +126,149 @@ import treeforestarchitecturestructuretextureleaf from "./assets/Texture/tree fo
 import treerockwoodtextureleaftrunk from "./assets/Texture/tree rock wood texture leaf trunk.jpg";
 import treewoodstreethousetexturewindow from "./assets/Texture/tree wood street house texture window.jpg";
 
+import AlmereV from "./assets/Texture/Almere V.jpg";
+import AlmereVI from "./assets/Texture/Almere VI.jpg";
+import AlmereXIII from "./assets/Texture/Almere XIII.jpg";
+import AlmereXIX from "./assets/Texture/Almere XIX.jpg";
+import AlphenTEXTURE00112 from "./assets/Texture/Alphen TEXTURE 00112.jpg";
+import AppartmentsbuildingV from "./assets/Texture/Appartments building V.jpg";
+import AroundTheCornerII from "./assets/Texture/Around The Corner II.jpg";
+import Assen016 from "./assets/Texture/Assen 016.jpg";
+import breakwalltexture09011 from "./assets/Texture/break wall texture 09011.jpg";
+import breakwallwindowtexture from "./assets/Texture/break wall window texture.jpg";
+import Broekop01 from "./assets/Texture/Broek op 01.jpg";
+import building1XVII from "./assets/Texture/building 1XVII.jpg";
+import buildingdesigntexture from "./assets/Texture/building design texture.jpg";
+import BuildingIV00 from "./assets/Texture/Building IV00.jpg";
+import BuildingkXIII from "./assets/Texture/Building kXIII.jpg";
+import buildingsnowtexture from "./assets/Texture/building snow texture.jpg";
+import buildingtexture0VX from "./assets/Texture/building texture 0VX.jpg";
+import buildingtexture0001 from "./assets/Texture/building texture 0001.jpg";
+import Buildingtexture1 from "./assets/Texture/Building texture 1.jpg";
+import buildingtexture002 from "./assets/Texture/building texture 002.jpg";
+import BuildingTexture2 from "./assets/Texture/Building Texture 2.jpg";
+import buildingtexture003 from "./assets/Texture/building texture 003.jpg";
+import buildingtexture0003 from "./assets/Texture/building texture 0003.jpg";
+import Buildingtexture3 from "./assets/Texture/Building texture 3.jpg";
+import buildingtexture004 from "./assets/Texture/building texture 004.jpg";
+import buildingtexture005 from "./assets/Texture/building texture 005.jpg";
+import buildingtexture0005 from "./assets/Texture/building texture 0005.jpg";
+import buildingtexture006 from "./assets/Texture/building texture 006.jpg";
+import buildingtexture0006 from "./assets/Texture/building texture 0006.jpg";
+import buildingtexture008 from "./assets/Texture/building texture 008.jpg";
+import buildingtexture0009 from "./assets/Texture/building texture 0009.jpg";
+import buildingtexture00010 from "./assets/Texture/building texture 00010.jpg";
+import buildingtexture00012 from "./assets/Texture/building texture 00012.jpg";
+import buildingtexture00013 from "./assets/Texture/building texture 00013.jpg";
+import Buildingtexture0100 from "./assets/Texture/Building texture 0100.jpg";
+import buildingtexture0101 from "./assets/Texture/building texture 0101.jpg";
+import buildingtexture0912 from "./assets/Texture/building texture 0912.jpg";
+import buildingtexture5001 from "./assets/Texture/building texture 5001.jpg";
+import buildingtexture05001 from "./assets/Texture/building texture 05001.jpg";
+import BUILDINGTEXTURE5011 from "./assets/Texture/BUILDING TEXTURE 5011.jpg";
+import buildingtexture6090 from "./assets/Texture/building texture 6090.jpg";
+import buildingtexture09800 from "./assets/Texture/building texture 09800.jpg";
+import buildingtexture50902 from "./assets/Texture/building texture 50902.jpg";
+import buildingtexture500012 from "./assets/Texture/building texture 500012.jpg";
+import buildingtextureoffice0990 from "./assets/Texture/building texture office 0990.jpg";
+import buildingtextureVBIIX from "./assets/Texture/building texture VBIIX.jpg";
+import buildingtextureVIIIXI from "./assets/Texture/building texture VIIIXI.jpg";
+import BUILDINGTEXTUREviiui from "./assets/Texture/BUILDING TEXTURE viiui.jpg";
+import buildingtextureVXXXZ from "./assets/Texture/building texture VXXXZ.jpg";
+import Buildingtexture from "./assets/Texture/Building texture.webp";
+import buildingtx9DC from "./assets/Texture/building tx 9DC.jpg";
+import buildingtx0070 from "./assets/Texture/building tx 0070.jpg";
+import buildingtx00701 from "./assets/Texture/building tx 00701.jpg";
+import buildingtx0971 from "./assets/Texture/building tx 0971.jpg";
+import BuildingtxCXII from "./assets/Texture/Building tx CXII.jpg";
+import buildingtxVXXI from "./assets/Texture/building tx VXXI.jpg";
+import buildingwindowstexture from "./assets/Texture/building windows texture.jpg";
+import Buildingwithtreetexture from "./assets/Texture/Building with tree texture.jpg";
+import BuildingXXVIII from "./assets/Texture/Building XXVIII.jpg";
+import BuildingXXX from "./assets/Texture/Building XXX.jpg";
+import BuildingnIX from "./assets/Texture/BuildingnIX.jpg";
+import buildngtextureVIIIIV from "./assets/Texture/buildng texture VIIIIV.jpg";
+import buldingtexture00014 from "./assets/Texture/bulding texture00014.jpg";
+import Canteen90 from "./assets/Texture/Canteen 90.jpg";
+import cirybuildingtexture0012 from "./assets/Texture/ciry building texture 0012.jpg";
+import CityBuildingtexture from "./assets/Texture/City Building texture.jpg";
+import factorybuildingtexture from "./assets/Texture/factory building texture.jpg";
+import floortexture1 from "./assets/Texture/floor texture 1.jpg";
+import floortexture02 from "./assets/Texture/floor texture 02.jpg";
+import glassbuildingtexture from "./assets/Texture/glass building texture.jpg";
+import Gouda043 from "./assets/Texture/Gouda 043.jpg";
+import GradientColortexture from "./assets/Texture/Gradient Color texture.jpg";
+import grasstexture001 from "./assets/Texture/grass texture 001.jpg";
+import Heerhugowaard from "./assets/Texture/Heerhugowaard.jpg";
+import HendrikIdo from "./assets/Texture/Hendrik Ido.jpg";
+import HertogenboschVIIIXV from "./assets/Texture/Hertogenbosch VIIIXV.jpg";
+import Hoorn8 from "./assets/Texture/Hoorn 8.jpg";
+import Hoorn13 from "./assets/Texture/Hoorn 13.jpg";
+import Hoorn14 from "./assets/Texture/Hoorn 14.jpg";
+import Hoorn21 from "./assets/Texture/Hoorn 21.jpg";
+import housefloortexture from "./assets/Texture/house floor texture.jpg";
+import housetexture001 from "./assets/Texture/house texture 001.jpg";
+import housetexture801 from "./assets/Texture/house texture 801.jpg";
+import housewindow090 from "./assets/Texture/house window 090.jpg";
+import Lelystad1 from "./assets/Texture/Lelystad 1.jpg";
+import Lelystad13 from "./assets/Texture/Lelystad 13.jpg";
+import Lelystad14 from "./assets/Texture/Lelystad 14.jpg";
+import Lelystad15 from "./assets/Texture/Lelystad 15.jpg";
+import newbuildingtexture5050 from "./assets/Texture/new building texture 5050.jpg";
+import newbuildingtexture from "./assets/Texture/new building texture.jpg";
+import newdesignbuildingtexture from "./assets/Texture/new design building texture.jpg";
+import newdesignbuildingtx from "./assets/Texture/new design building tx.jpg";
+import officebuilding0102 from "./assets/Texture/office building 0102.jpg";
+import officebuildingtexture from "./assets/Texture/office building texture.jpg";
+import OfficebuildingV from "./assets/Texture/Office building V.jpg";
+import OfficebuildingVI from "./assets/Texture/Office building VI.jpg";
+import OfficeI from "./assets/Texture/Office I.jpg";
+import OfficeII from "./assets/Texture/Office II.jpg";
+import OfficeIV from "./assets/Texture/Office IV.jpg";
+import OfficebuildingIX from "./assets/Texture/Office-building IX.jpg";
+import Oosterhout25 from "./assets/Texture/Oosterhout 25.jpg";
+import Oosterhout26 from "./assets/Texture/Oosterhout 26.jpg";
+import Oosterhout28 from "./assets/Texture/Oosterhout 28.jpg";
+import Oosterhout30 from "./assets/Texture/Oosterhout 30.jpg";
+import Oosterhout31 from "./assets/Texture/Oosterhout 31.jpg";
+import Purmerend3 from "./assets/Texture/Purmerend 3.jpg";
+import Purmerend18 from "./assets/Texture/Purmerend 18.jpg";
+import rockgrasstexture from "./assets/Texture/rock grass texture.jpg";
+import RotterdamIV from "./assets/Texture/Rotterdam-IV.jpg";
+import Schiedam1 from "./assets/Texture/Schiedam 1.jpg";
+import Schiedam5 from "./assets/Texture/Schiedam 5.jpg";
+import Schiedam6 from "./assets/Texture/Schiedam 6.jpg";
+import Schiedam7 from "./assets/Texture/Schiedam 7.jpg";
+import Schiedam11 from "./assets/Texture/Schiedam 11.jpg";
+import texture000019 from "./assets/Texture/texture 000019.jpg";
+import texture3012 from "./assets/Texture/texture 3012.jpg";
+import texturebuilding0021 from "./assets/Texture/texture building 0021.jpg";
+import texturehouse4001 from "./assets/Texture/texture house 4001.jpg";
+import Tilburg43 from "./assets/Texture/Tilburg 43.jpg";
+import Tilburg44 from "./assets/Texture/Tilburg 44.jpg";
+import tilebuildingtexture from "./assets/Texture/tile building texture.jpg";
+import Vlaardingen8 from "./assets/Texture/Vlaardingen 8.jpg";
+import walltexture01 from "./assets/Texture/wall texture 01.jpg";
+import walltexture004 from "./assets/Texture/wall texture 004.jpg";
+import wallVXIIX from "./assets/Texture/wall VXIIX.jpg";
+import wallwindowtexture400 from "./assets/Texture/wall window texture 400.jpg";
+import wallwindowtexture from "./assets/Texture/wall window texture.jpg";
+import wallwindowVIIO from "./assets/Texture/wall window VIIO.jpg";
+import WallXX from "./assets/Texture/Wall XX.jpg";
+import WallXXV from "./assets/Texture/Wall XXV.jpg";
+import WindowII from "./assets/Texture/Window II.jpg";
+import WindowV from "./assets/Texture/Window V.jpg";
+import WindowVI from "./assets/Texture/Window VI.jpg";
+import windowVIIX from "./assets/Texture/window VIIX.jpg";
+import WindowXIII from "./assets/Texture/Window XIII.jpg";
+import WindowXVII from "./assets/Texture/Window XVII.jpg";
+import WindowXXV from "./assets/Texture/Window XXV.jpg";
+import WindowXXVIII from "./assets/Texture/Window XXVIII.jpg";
+import WindowIII1024x683 from "./assets/Texture/Window-III-1024x683.jpg";
+import WindowsAndPlants from "./assets/Texture/Windows And Plants.jpg";
+import woodbuildingtexture from "./assets/Texture/wood building texture.jpg";
+
+
 
 
 import stars from "./assets/ICONS/3-stars.png";
@@ -331,6 +474,152 @@ const allCategories = {
     { src: treeforestarchitecturestructuretextureleaf, name: "tree forest architecture structure texture leaf" },
     { src: treerockwoodtextureleaftrunk, name: "tree rock wood texture leaf trunk" },
     { src: treewoodstreethousetexturewindow, name: "tree wood street house texture window" },
+    { src: AlmereV, name: "Almere V" },
+    { src: AlmereVI, name: "Almere VI" },
+    { src: AlmereXIII, name: "Almere XIII" },
+    { src: AlmereXIX, name: "Almere XIX" },
+    { src: AlphenTEXTURE00112, name: "Alphen TEXTURE 00112" },
+    { src: AppartmentsbuildingV, name: "Appartments building V" },
+    { src: AroundTheCornerII, name: "Around The Corner II" },
+    { src: Assen016, name: "Assen 016" },
+    { src: breakwalltexture09011, name: "break wall texture 09011.jpg" },
+    { src: breakwallwindowtexture, name: "break wall window texture" },
+    { src: Broekop01, name: "Broek op 01.jpg" },
+    { src: building1XVII, name: "building 1XVII" },
+    { src: buildingdesigntexture, name: "building design texture" },
+    { src: BuildingIV00, name: "Building IV00.jpg" },
+    { src: BuildingkXIII, name: "Building kXIII" },
+    { src: buildingsnowtexture, name: "building snow texture" },
+    { src: buildingtexture0VX, name: "building texture 0VX" },
+    { src: buildingtexture0001, name: "building texture 0001" },
+    { src: Buildingtexture1, name: "Building texture 1" },
+    { src: buildingtexture002, name: "building texture 002" },
+    { src: BuildingTexture2, name: "Building Texture 2" },
+    { src: buildingtexture003, name: "building texture 003" },
+    { src: buildingtexture0003, name: "building texture 0003" },
+    { src: Buildingtexture3, name: "Building texture 3" },
+    { src: buildingtexture004, name: "building texture 004" },
+    { src: buildingtexture005, name: "building texture 005" },
+    { src: buildingtexture0005, name: "building texture 0005" },
+    { src: buildingtexture006, name: "building texture 006" },
+    { src: buildingtexture0006, name: "building texture 0006" },
+    { src: buildingtexture008, name: "building texture 008" },
+    { src: buildingtexture0009, name: "building texture 0009" },
+    { src: buildingtexture00010, name: "building texture 00010" },
+    { src: buildingtexture00012, name: "building texture 00012" },
+    { src: buildingtexture00013, name: "building texture 00013" },
+    { src: Buildingtexture0100, name: "Building texture 0100" },
+    { src: buildingtexture0101, name: "building texture 0101" },
+    { src: buildingtexture0912, name: "building texture 0912" },
+    { src: buildingtexture5001, name: "building texture 5001" },
+    { src: buildingtexture05001, name: "building texture 05001" },
+    { src: BUILDINGTEXTURE5011, name: "BUILDING TEXTURE 5011" },
+    { src: buildingtexture6090, name: "building texture 6090" },
+    { src: buildingtexture09800, name: "building texture 09800" },
+    { src: buildingtexture50902, name: "building texture 50902" },
+    { src: buildingtexture500012, name: "building texture 500012" },
+    { src: buildingtextureoffice0990, name: "building texture office 0990" },
+    { src: buildingtextureVBIIX, name: "building texture VBIIX" },
+    { src: buildingtextureVIIIXI, name: "building texture VIIIXI" },
+    { src: BUILDINGTEXTUREviiui, name: "BUILDING TEXTURE viiui" },
+    { src: buildingtextureVXXXZ, name: "building texture VXXXZ" },
+    { src: Buildingtexture, name: "Building texture" },
+    { src: buildingtx9DC, name: "building tx 9DC" },
+    { src: buildingtx0070, name: "building tx 0070" },
+    { src: buildingtx00701, name: "building tx 00701" },
+    { src: buildingtx0971, name: "building tx 0971" },
+    { src: BuildingtxCXII, name: "Building tx CXII" },
+    { src: buildingtxVXXI, name: "building tx VXXI" },
+    { src: buildingwindowstexture, name: "building windows texture" },
+    { src: Buildingwithtreetexture, name: "Building with tree texture" },
+    { src: BuildingXXVIII, name: "Building XXVIII" },
+    { src: BuildingXXX, name: "Building XXX" },
+    { src: BuildingnIX, name: "BuildingnIX" },
+    { src: buildngtextureVIIIIV, name: "buildng texture VIIIIV" },
+    { src: buldingtexture00014, name: "bulding texture00014" },
+    { src: Canteen90, name: "Canteen 90" },
+    { src: cirybuildingtexture0012, name: "ciry building texture 0012" },
+    { src: CityBuildingtexture, name: "City Building texture" },
+    { src: factorybuildingtexture, name: "factory building texture" },
+    { src: floortexture1, name: "floor texture 1" },
+    { src: floortexture02, name: "floor texture 02" },
+    { src: glassbuildingtexture, name: "glass building texture" },
+    { src: Gouda043, name: "Gouda 043" },
+    { src: GradientColortexture, name: "Gradient Color texture" },
+    { src: grasstexture001, name: "grass texture 001" },
+    { src: Heerhugowaard, name: "Heerhugowaard" },
+    { src: HendrikIdo, name: "Hendrik Ido " },
+    { src: HertogenboschVIIIXV, name: "Hertogenbosch VIIIXV" },
+    { src: Hoorn8, name: "Hoorn 8" },
+    { src: Hoorn13, name: "Hoorn 13" },
+    { src: Hoorn14, name: "Hoorn 14" },
+    { src: Hoorn21, name: "Hoorn 21" },
+    { src: housefloortexture, name: "house floor texture" },
+    { src: housetexture001, name: "house texture 001" },
+    { src: housetexture801, name: "house texture 801" },
+    { src: housewindow090, name: "house window 090" },
+    { src: Lelystad1, name: "Lelystad 1" },
+    { src: Lelystad13, name: "Lelystad 13" },
+    { src: Lelystad14, name: "Lelystad 14" },
+    { src: Lelystad15, name: "Lelystad 15" },
+    { src: newbuildingtexture5050, name: "new building texture 5050" },
+    { src: newbuildingtexture, name: "new building texture" },
+    { src: newbuildingtexture, name: "new building texture" },
+    { src: newdesignbuildingtexture, name: "new design building texture" },
+    { src: newdesignbuildingtx, name: "new design building tx" },
+    { src: officebuilding0102, name: "office building 0102" },
+    { src: officebuildingtexture, name: "office building texture" },
+    { src: OfficebuildingV, name: "Office building V" },
+    { src: OfficebuildingVI, name: "Office building VI" },
+    { src: OfficeI, name: "Office I" },
+    { src: OfficeII, name: "Office II" },
+    { src: OfficeIV, name: "Office IV" },
+    { src: OfficebuildingIX, name: "Office-building IX" },
+    { src: OfficebuildingIX, name: "Office-building-IX" },
+    { src: OfficebuildingVI, name: "Office-building-VI" },
+    { src: Oosterhout25, name: "Oosterhout 25" },
+    { src: Oosterhout26, name: "Oosterhout 26" },
+    { src: Oosterhout28, name: "Oosterhout 28" },
+    { src: Oosterhout30, name: "Oosterhout 30" },
+    { src: Oosterhout31, name: "Oosterhout 31" },
+    { src: Purmerend3, name: "Purmerend 3" },
+    { src: Purmerend18, name: "Purmerend 18" },
+    { src: rockgrasstexture, name: "rock grass texture" },
+    { src: RotterdamIV, name: "Rotterdam-IV" },
+    { src: Schiedam1, name: "Schiedam 1" },
+    { src: Schiedam5, name: "Schiedam 5" },
+    { src: Schiedam6, name: "Schiedam 6" },
+    { src: Schiedam7, name: "Schiedam 7" },
+    { src: Schiedam11, name: "Schiedam 11" },
+    { src: texture000019, name: "texture 000019" },
+    { src: texture3012, name: "texture 3012" },
+    { src: texturebuilding0021, name: "texture building 0021" },
+    { src: texturehouse4001, name: "texture house 4001" },
+    { src: Tilburg43, name: "Tilburg 43" },
+    { src: Tilburg44, name: "Tilburg 44" },
+    { src: tilebuildingtexture, name: "tile building texture" },
+    { src: Vlaardingen8, name: "Vlaardingen 8" },
+    { src: walltexture01, name: "wall texture 01" },
+    { src: walltexture004, name: "wall texture 004" },
+    { src: wallVXIIX, name: "wall VXIIX" },
+    { src: wallwindowtexture400, name: "wall window texture 400" },
+    { src: wallwindowtexture, name: "wall window texture" },
+    { src: wallwindowVIIO, name: "wall window VIIO" },
+    { src: WallXX, name: "Wall XX" },
+    { src: WallXXV, name: "Wall XXV" },
+    { src: WindowII, name: "WindowII" },
+    { src: WindowV, name: "Window V" },
+    { src: WindowVI, name: "Window VI" },
+    { src: windowVIIX, name: "window VIIX" },
+    { src: WindowXIII, name: "Window XIII" },
+    { src: WindowXVII, name: "Window XVII" },
+    { src: WindowXXV, name: "Window XXV" },
+    { src: WindowXXVIII, name: "Window XXVIII" },
+    { src: WindowIII1024x683, name: "Window-III-1024x683" },
+    { src: WindowsAndPlants, name: "Windows And Plants" },
+    { src: woodbuildingtexture, name: "wood building texture" }
+
+
   ],
   Icons: [
     { src: stars, name: "3 Stars" },
